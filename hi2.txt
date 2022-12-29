@@ -1,0 +1,39 @@
+draft detailed documentation function by function, controller by controller, route by route, and model by model. Provide all inputs/request bodies and outputs/response bodies with all use cases, user stories, and usage scenarios
+
+
+
+
+
+
+
+Introduction:
+    Purpose of the documentation
+    Overview of the application
+    Target audience
+Function by function:
+    Description of each function
+    Input parameters
+    Output values
+    Error conditions
+    Examples of usage
+Controller by controller:
+    Description of each controller
+    Functions and routes handled
+    Models interacted with
+    Error conditions
+    Examples of usage
+Route by route:
+    Description of each route
+    Controller and action mapped to
+    HTTP method handled
+    Input and output parameters
+    Examples of usage
+Model by model:
+    Description of each model
+    Attributes
+    Relationships
+    Custom methods
+    Examples of usage
+Use cases, user stories, and usage scenarios:
+Description of each feature
+Examples of use cases, user stories, and usage scenarios

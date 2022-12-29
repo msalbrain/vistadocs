@@ -1,0 +1,23 @@
+Function by function:
+For each function or method in your application, you should include the following information in your documentation:
+
+Function name: The name of the function, along with a brief description of what it does.
+
+Arguments: A list of all arguments accepted by the function, along with their data types and a description of what they represent.
+
+Return value: A description of what the function returns, including the data type of the return value.
+
+Example: An example of how to call the function, along with the expected input and output.
+
+Controller by controller:
+For each controller in your application, you should include the following information in your documentation:
+
+Controller name: The name of the controller, along with a brief description of its purpose.
+
+Routes: A list of all routes handled by the controller, along with their HTTP verbs (e.g. GET, POST, PUT, DELETE) and a description of what they do.
+
+Request bodies: A description of the request body (if applicable) for each route, including any required and optional parameters and their data types.
+
+Response bodies: A description of the response body (if applicable) for each route, including any returned data and their data types.
+
+Example: An example of how to make a request to each route, along with the expected input and output.

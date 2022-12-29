@@ -3,18 +3,19 @@ theme:
   name: 'material'
   features:
     - navigation.tracking
+    - navigation.sections
 nav:
+  - Functions:
+    - structure: route/index.md
   - Controller:
     - structure: controller/index.md
-    - Admin: controller/index.md
-    - API: controller/index.md
-    - Concern: controller/index.md
-    - Partner: controller/index.md
+    - Admin: controller/admin.md
+    - API: controller/api.md
+    - Partner: controller/partner.md
   - Route:
-    - Index: section/index.md
-    - Page 1: section/page-1.md
-    - Page n: section/page-n.md
+    - route/index.md
   - Models:
-    - structure: section/index.md
-    - Page 1: section/page-1.md
-    - Page n: section/page-n.md
+    - structure: models/index.md
+    - concerns: models/concern.md
+    - personality: models/personality.md
+    - version: models/version.md

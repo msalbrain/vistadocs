@@ -1,0 +1,42 @@
+[
+    {
+        "id": 4222,
+        "title": "General",
+        "description": "Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.",
+        "parentId": 4211,
+        "hasChildren": false,
+        "ancestry": "4211",
+        "subtreeQuestionsCount": 6,
+        "ignored": false,
+        "position": 1,
+        "initial": false,
+        "visibilityConditions": null,
+        "photo": {
+            "id": 4107,
+            "largeUrl": "http://assets.vista.test/uploads/photo/image/4107/large_440.jpeg",
+            "mediumUrl": "http://assets.vista.test/uploads/photo/image/4107/medium_440.jpeg",
+            "squareUrl": "http://assets.vista.test/uploads/photo/image/4107/square_440.jpeg",
+            "thumbUrl": "http://assets.vista.test/uploads/photo/image/4107/thumb_440.jpeg"
+        }
+    },
+    {
+        "id": 4213,
+        "title": "Parking",
+        "description": "Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras mattis consectetur purus sit amet fermentum.",
+        "parentId": 4211,
+        "hasChildren": false,
+        "ancestry": "4211",
+        "subtreeQuestionsCount": 2,
+        "ignored": false,
+        "position": 2,
+        "initial": false,
+        "visibilityConditions": null,
+        "photo": {
+            "id": 4104,
+            "largeUrl": "http://assets.vista.test/uploads/photo/image/4104/large_440.jpeg",
+            "mediumUrl": "http://assets.vista.test/uploads/photo/image/4104/medium_440.jpeg",
+            "squareUrl": "http://assets.vista.test/uploads/photo/image/4104/square_440.jpeg",
+            "thumbUrl": "http://assets.vista.test/uploads/photo/image/4104/thumb_440.jpeg"
+        }
+    }
+]

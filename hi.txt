@@ -1,0 +1,8 @@
+controllers 
+1. ActionController::Base
+2. ApplicationController < 1
+3. ReactEntryController < 2
+
+
+
+
