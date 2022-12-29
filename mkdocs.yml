@@ -1,1 +1,5 @@
-site_name: My Docs
+site_name: Vista Docs
+theme:
+  name: 'material'
+  features:
+    - navigation.tracking
