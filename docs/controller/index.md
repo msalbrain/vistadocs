@@ -6,6 +6,7 @@
     ├───controllers
         ├───admin
         │   ├───articles
+        |   |
         │   ├───categories
         │   ├───partner_categories
         │   ├───staff
