@@ -11,7 +11,7 @@
 
 
 
-## **ApplicationHelper module**
+
 The ApplicationHelper module is a utility module that provides a set of helper methods that can be used in views and controllers throughout a Ruby on Rails application.
 
 Here is a description of the title method you provided:

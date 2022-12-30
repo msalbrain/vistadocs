@@ -4,9 +4,10 @@ theme:
   features:
     - navigation.tracking
     - navigation.sections
+    - toc.follow
 nav:
   - Functions:
-    - structure: route/index.md
+    - structure: function/index.md
   - Controller:
     - structure: controller/index.md
     - Admin: controller/admin.md

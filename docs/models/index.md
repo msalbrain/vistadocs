@@ -1,24 +1,48 @@
 ## Models
 
-# Address
+### Folder structure
+```
+    ├───models
+        ├───concerns
+        ├───personality
+        └───versions
+```
+
+
+# **Address**
 The Address model represents an address in the system. It has the following attributes:
 
-    id (integer): a unique ID for the address
-    label (string): a label or nickname for the address
-    line1 (string): the first line of the address
-    line2 (string): the second line of the address
-    town (string): the town or city where the address is located
-    county (string): the county or region where the address is located
-    postcode (string): the postal code for the address
-    country (string): the country where the address is located
-    phone (string): a phone number associated with the address
-    latitude (decimal): the latitude of the address
-    longitude (decimal): the longitude of the address
-    addressable_type (string): the type of model that the address belongs to (e.g. "User" or "Company")
-    addressable_id (integer): the ID of the model that the address belongs to
-    created_at (datetime): the date and time that the address was created
-    updated_at (datetime): the date and time that the address was last updated
-    city_id (integer): the ID of the city where the address is located
+**id** (integer): a unique ID for the address
+
+**label** (string): a label or nickname for the address
+
+**line1** (string): the first line of the address
+
+**line2** (string): the second line of the address
+
+**town** (string): the town or city where the address is located
+
+**county** (string): the county or region where the address is located
+
+**postcode** (string): the postal code for the address
+
+**country** (string): the country where the address is located
+
+**phone** (string): a phone number associated with the address
+
+**latitude** (decimal): the latitude of the address
+
+**longitude** (decimal): the longitude of the address
+
+**addressable_type** (string): the type of model that the address belongs to** (e.g. "User" or "Company")
+
+**addressable_id** (integer): the ID of the model that the address belongs to
+
+**created_at** (datetime): the date and time that the address was created
+
+**updated_at** (datetime): the date and time that the address was last updated
+
+**city_id** (integer): the ID of the city where the address is located
 
 The Address model has the following relationships:
 
@@ -49,138 +73,163 @@ Here are some examples of how the Address model might be used:
     user = User.find(123)
 
 
-# Admin
+# **Admin**
 
-Attributes:
+### The following are the Attributes of Admin:
 
-id: bigint
-email: string
-first_name: string
-last_name: string
-mobile_number: string
-encrypted_password: string
-reset_password_token: string
-reset_password_sent_at: datetime
-remember_created_at: datetime
-sign_in_count: integer
-current_sign_in_at: datetime
-last_sign_in_at: datetime
-current_sign_in_ip: inet
-last_sign_in_ip: inet
-authentication_token: string
-created_at: datetime
-updated_at: datetime
-organisation_id: bigint
-type: string
-employee_id: string
-confirmation_token: string
-confirmed_at: datetime
-confirmation_sent_at: datetime
-suspended_at: datetime
-archived_at: datetime
-encrypted_pin: string
-unconfirmed_email: string
-Relationships:
+**id**: bigint, primary key for the model
 
-Inherits from StaffMember model
-Custom methods: None
+**email**: string, the email address of the admin
 
-Examples of usage:
+**first_name**: string, the first name of the admin
 
-An instance of the Admin model could represent a staff member with administrative privileges within an organization.
-The email, password, and authentication token attributes could be used for authenticating the admin when logging in to the system.
-The sign_in_count, current_sign_in_at, and last_sign_in_at attributes could be used for tracking the admin's login history.
-The organisation_id attribute could be used to associate the admin with a specific organization.
-The suspended_at attribute could be used to temporarily suspend the admin's access to the system.
+**last_name**: string, the last name of the admin
 
-# Answer
+**mobile_number**: string, the mobile phone number of the admin
 
-# ApplicationRecord
+**encrypted_password**: string, a hashed version of the admin's password
 
-# ArticleContentCategory
+**reset_password_token**: string, a token used for resetting the admin's password
 
-# Article
+**reset_password_sent_at**: datetime, the time at which the reset password token was sent
 
-# AuthenticationToken
+**remember_created_at**: datetime, the time at which the admin selected the "remember me" option during login
 
-# BranchCategorisation
+**sign_in_count**: integer, the number of times the admin has signed in
 
-# BranchManager
+**current_sign_in_at**: datetime, the time at which the admin signed in during the current session
 
-# Branch
+**last_sign_in_at**: datetime, the time at which the admin signed in during the previous session
 
-# BusinessUnit
+**current_sign_in_ip**: inet, the IP address of the admin during the current session
 
-# CategoryUpdate
+**last_sign_in_ip**: inet, the IP address of the admin during the previous session
 
-# Category
+**authentication_token**: string, a token used for authenticating the admin
 
-# CheckIn
+**created_at**: datetime, the time at which the admin's record was created
 
-# City
+**updated_at**: datetime, the time at which the admin's record was last updated
 
-# ContentCategory
+**organisation_id**: bigint, the ID of the organization to which the admin belongs
 
-# DataImport
+**type**: string, the type of staff member (in this case, "Admin")
 
-# Device
+**employee_id**: string, the employee ID of the admin
 
-# Feed
+**confirmation_token**: string, a token used for confirming the admin's email address
 
-# Ignore
+**confirmed_at**: datetime, the time at which the admin's email address was confirmed
 
-# Interaction
+**confirmation_sent_at**: datetime, the time at which the confirmation token was sent
 
-# MemberRequestMessage
+**suspended_at**: datetime, the time at which the admin's access was suspended
 
-# MemberRequestTypeAssignment
+**archived_at**: datetime, the time at which the admin's record was archived
 
-# MemberRequestType
+**encrypted_pin**: string, a hashed version of the admin's PIN (personal identification number)
 
-# MemberRequest
+**unconfirmed_email**: string, the unconfirmed email address of the admin (if the admin has requested a change to their email address)
 
-# Notification
+### Inherits from [StaffMember](/models/#staffmember) model
 
-# Organisation
+### Custom methods: None
 
-# PartnerCategory
+### Examples of usage:
 
-# Personality
+    An instance of the Admin model could represent a staff member with administrative privileges within an organization.
+    The email, password, and authentication token attributes could be used for authenticating the admin when logging in to the system.
+    The sign_in_count, current_sign_in_at, and last_sign_in_at attributes could be used for tracking the admin's login history.
 
-# Photo
 
-# PreferenceGroup
+# **Answer**
 
-# ProfileRequest
+# **ApplicationRecord**
 
-# Question 
+# **ArticleContentCategory**
 
-# Rating
+# **Article**
 
-# Release
+# **AuthenticationToken**
 
-# RoleAssignment
+# **BranchCategorisation**
 
-# RolePreferenceGroupAssignment
+# **BranchManager**
 
-# Role
+# **Branch**
 
-# Share
+# **BusinessUnit**
 
-# StaffAssignment
+# **CategoryUpdate**
 
-#  StaffMember
+# **Category**
 
-# TopQuestion
+# **CheckIn**
 
-# UserAnswer
+# **City**
 
-# User
+# **ContentCategory**
 
-# VideoContentCategory
+# **DataImport**
 
-# Video
+# **Device**
 
-# VistaAdmin
+# **Feed**
+
+# **Ignore**
+
+# **Interaction**
+
+# **MemberRequestMessage**
+
+# **MemberRequestTypeAssignment**
+
+# **MemberRequestType**
+
+# **MemberRequest**
+
+# **Notification**
+
+# **Organisation**
+
+# **PartnerCategory**
+
+# **Personality**
+
+# **Photo**
+
+# **PreferenceGroup**
+
+# **ProfileRequest**
+
+# **Question** 
+
+# **Rating**
+
+# **Release**
+
+# **RoleAssignment**
+
+# **RolePreferenceGroupAssignment**
+
+# **Role**
+
+# **Share**
+
+# **StaffAssignment**
+
+# **StaffMember**
+
+# **TopQuestion**
+
+# **UserAnswer**
+
+# **User**
+
+# **VideoContentCategory**
+
+# **Video**
+
+# **VistaAdmin**
 
 
