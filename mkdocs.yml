@@ -8,6 +8,8 @@ theme:
 nav:
   - Functions:
     - structure: function/index.md
+    - admin: function/admin.md
+    - partners: function/partner.md
   - Controller:
     - structure: controller/index.md
     - Admin: controller/admin.md
@@ -20,3 +22,4 @@ nav:
     - concerns: models/concern.md
     - personality: models/personality.md
     - version: models/version.md
+

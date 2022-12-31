@@ -76,3 +76,7 @@ Examples of usage for the ApplicationController might include setting flash mess
     end
 
 In this example, the PostsController inherits from ApplicationController and makes use of the custom flash types (:success and :error) defined in the base class. It also utilizes the protect_from_forgery feature to protect against CSRF attacks.
+
+
+
+
