@@ -1,0 +1,1767 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>structure - Vista Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#models" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Vista Docs" class="md-header__button md-logo" aria-label="Vista Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Vista Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              structure
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Vista Docs" class="md-nav__button md-logo" aria-label="Vista Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Vista Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_1">
+          Functions
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Functions" data-md-level="1">
+        <label class="md-nav__title" for="__nav_1">
+          <span class="md-nav__icon md-icon"></span>
+          Functions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function/" class="md-nav__link">
+        structure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function/admin/" class="md-nav__link">
+        admin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function/partner/" class="md-nav__link">
+        partners
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Controller
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Controller" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Controller
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controller/" class="md-nav__link">
+        structure
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controller/admin/" class="md-nav__link">
+        Admin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controller/api/" class="md-nav__link">
+        API
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../controller/partner/" class="md-nav__link">
+        Partner
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Route
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Route" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Route
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../route/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Models" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          structure
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        structure
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    Folder structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#address" class="md-nav__link">
+    Address
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin" class="md-nav__link">
+    Admin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answer" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applicationrecord" class="md-nav__link">
+    ApplicationRecord
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#articlecontentcategory" class="md-nav__link">
+    ArticleContentCategory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#article" class="md-nav__link">
+    Article
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authenticationtoken" class="md-nav__link">
+    AuthenticationToken
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branchcategorisation" class="md-nav__link">
+    BranchCategorisation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branchmanager" class="md-nav__link">
+    BranchManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branch" class="md-nav__link">
+    Branch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#businessunit" class="md-nav__link">
+    BusinessUnit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categoryupdate" class="md-nav__link">
+    CategoryUpdate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#category" class="md-nav__link">
+    Category
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkin" class="md-nav__link">
+    CheckIn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#city" class="md-nav__link">
+    City
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contentcategory" class="md-nav__link">
+    ContentCategory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataimport" class="md-nav__link">
+    DataImport
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device" class="md-nav__link">
+    Device
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feed" class="md-nav__link">
+    Feed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignore" class="md-nav__link">
+    Ignore
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interaction" class="md-nav__link">
+    Interaction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memberrequestmessage" class="md-nav__link">
+    MemberRequestMessage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memberrequesttypeassignment" class="md-nav__link">
+    MemberRequestTypeAssignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memberrequesttype" class="md-nav__link">
+    MemberRequestType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memberrequest" class="md-nav__link">
+    MemberRequest
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notification" class="md-nav__link">
+    Notification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organisation" class="md-nav__link">
+    Organisation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partnercategory" class="md-nav__link">
+    PartnerCategory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personality" class="md-nav__link">
+    Personality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#photo" class="md-nav__link">
+    Photo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferencegroup" class="md-nav__link">
+    PreferenceGroup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profilerequest" class="md-nav__link">
+    ProfileRequest
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    Question
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rating" class="md-nav__link">
+    Rating
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release" class="md-nav__link">
+    Release
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roleassignment" class="md-nav__link">
+    RoleAssignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rolepreferencegroupassignment" class="md-nav__link">
+    RolePreferenceGroupAssignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role" class="md-nav__link">
+    Role
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share" class="md-nav__link">
+    Share
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staffassignment" class="md-nav__link">
+    StaffAssignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staffmember" class="md-nav__link">
+    StaffMember
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topquestion" class="md-nav__link">
+    TopQuestion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useranswer" class="md-nav__link">
+    UserAnswer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    User
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videocontentcategory" class="md-nav__link">
+    VideoContentCategory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    Video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vistaadmin" class="md-nav__link">
+    VistaAdmin
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="concern/" class="md-nav__link">
+        concerns
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="personality/" class="md-nav__link">
+        personality
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="version/" class="md-nav__link">
+        version
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#models" class="md-nav__link">
+    Models
+  </a>
+  
+    <nav class="md-nav" aria-label="Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#folder-structure" class="md-nav__link">
+    Folder structure
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#address" class="md-nav__link">
+    Address
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin" class="md-nav__link">
+    Admin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answer" class="md-nav__link">
+    Answer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applicationrecord" class="md-nav__link">
+    ApplicationRecord
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#articlecontentcategory" class="md-nav__link">
+    ArticleContentCategory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#article" class="md-nav__link">
+    Article
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authenticationtoken" class="md-nav__link">
+    AuthenticationToken
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branchcategorisation" class="md-nav__link">
+    BranchCategorisation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branchmanager" class="md-nav__link">
+    BranchManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branch" class="md-nav__link">
+    Branch
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#businessunit" class="md-nav__link">
+    BusinessUnit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#categoryupdate" class="md-nav__link">
+    CategoryUpdate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#category" class="md-nav__link">
+    Category
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checkin" class="md-nav__link">
+    CheckIn
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#city" class="md-nav__link">
+    City
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contentcategory" class="md-nav__link">
+    ContentCategory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataimport" class="md-nav__link">
+    DataImport
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#device" class="md-nav__link">
+    Device
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#feed" class="md-nav__link">
+    Feed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignore" class="md-nav__link">
+    Ignore
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interaction" class="md-nav__link">
+    Interaction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memberrequestmessage" class="md-nav__link">
+    MemberRequestMessage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memberrequesttypeassignment" class="md-nav__link">
+    MemberRequestTypeAssignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memberrequesttype" class="md-nav__link">
+    MemberRequestType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#memberrequest" class="md-nav__link">
+    MemberRequest
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notification" class="md-nav__link">
+    Notification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organisation" class="md-nav__link">
+    Organisation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partnercategory" class="md-nav__link">
+    PartnerCategory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personality" class="md-nav__link">
+    Personality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#photo" class="md-nav__link">
+    Photo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferencegroup" class="md-nav__link">
+    PreferenceGroup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profilerequest" class="md-nav__link">
+    ProfileRequest
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#question" class="md-nav__link">
+    Question
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rating" class="md-nav__link">
+    Rating
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release" class="md-nav__link">
+    Release
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roleassignment" class="md-nav__link">
+    RoleAssignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rolepreferencegroupassignment" class="md-nav__link">
+    RolePreferenceGroupAssignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#role" class="md-nav__link">
+    Role
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#share" class="md-nav__link">
+    Share
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staffassignment" class="md-nav__link">
+    StaffAssignment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staffmember" class="md-nav__link">
+    StaffMember
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#topquestion" class="md-nav__link">
+    TopQuestion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useranswer" class="md-nav__link">
+    UserAnswer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user" class="md-nav__link">
+    User
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videocontentcategory" class="md-nav__link">
+    VideoContentCategory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video" class="md-nav__link">
+    Video
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vistaadmin" class="md-nav__link">
+    VistaAdmin
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h2 id="models">Models</h2>
+<h3 id="folder-structure">Folder structure</h3>
+<pre><code>    ├───models
+        ├───concerns
+        ├───personality
+        └───versions
+</code></pre>
+<h1 id="address"><strong>Address</strong></h1>
+<p>The Address model represents an address in the system. It has the following attributes:</p>
+<p><strong>id</strong> (integer): a unique ID for the address</p>
+<p><strong>label</strong> (string): a label or nickname for the address</p>
+<p><strong>line1</strong> (string): the first line of the address</p>
+<p><strong>line2</strong> (string): the second line of the address</p>
+<p><strong>town</strong> (string): the town or city where the address is located</p>
+<p><strong>county</strong> (string): the county or region where the address is located</p>
+<p><strong>postcode</strong> (string): the postal code for the address</p>
+<p><strong>country</strong> (string): the country where the address is located</p>
+<p><strong>phone</strong> (string): a phone number associated with the address</p>
+<p><strong>latitude</strong> (decimal): the latitude of the address</p>
+<p><strong>longitude</strong> (decimal): the longitude of the address</p>
+<p><strong>addressable_type</strong> (string): the type of model that the address belongs to** (e.g. "User" or "Company")</p>
+<p><strong>addressable_id</strong> (integer): the ID of the model that the address belongs to</p>
+<p><strong>created_at</strong> (datetime): the date and time that the address was created</p>
+<p><strong>updated_at</strong> (datetime): the date and time that the address was last updated</p>
+<p><strong>city_id</strong> (integer): the ID of the city where the address is located</p>
+<p>The Address model has the following relationships:</p>
+<pre><code>belongs_to :addressable, polymorphic: true: this indicates that the address belongs to a parent model, and the addressable_type and addressable_id attributes are used to specify which model the address belongs to. The polymorphic option indicates that the parent model can be any type of model, and the inverse_of: :address option specifies the name of the has_one or has_many association on the parent model.
+belongs_to :city: this indicates that the address belongs to a city. The city_id attribute is used to specify which city the address belongs to.
+</code></pre>
+<p>The Address model has the following custom methods:</p>
+<pre><code>country_name: this method returns the name of the country for the address. It uses the ISO3166 gem to look up the name of the country based on the country attribute.
+country_code: this method returns the country code for the address. It simply returns the value of the country attribute.
+</code></pre>
+<p>Here are some examples of how the Address model might be used:
+    # Find all addresses for a user
+    user = User.find(123)
+    addresses = user.addresses</p>
+<pre><code># Find the nearest address to a given location
+latitude = 37.774929
+longitude = -122.419416
+radius = 5 # miles
+addresses = Address.within(radius, origin: [latitude, longitude])
+
+# Find the address for a specific user
+user = User.find(123)
+address = user.address
+
+# Set the address for a user
+user = User.find(123)
+</code></pre>
+<h1 id="admin"><strong>Admin</strong></h1>
+<p>The following are the Attributes of Admin:</p>
+<p><strong>id</strong>: bigint, primary key for the model</p>
+<p><strong>email</strong>: string, the email address of the admin</p>
+<p><strong>first_name</strong>: string, the first name of the admin</p>
+<p><strong>last_name</strong>: string, the last name of the admin</p>
+<p><strong>mobile_number</strong>: string, the mobile phone number of the admin</p>
+<p><strong>encrypted_password</strong>: string, a hashed version of the admin's password</p>
+<p><strong>reset_password_token</strong>: string, a token used for resetting the admin's password</p>
+<p><strong>reset_password_sent_at</strong>: datetime, the time at which the reset password token was sent</p>
+<p><strong>remember_created_at</strong>: datetime, the time at which the admin selected the "remember me" option during login</p>
+<p><strong>sign_in_count</strong>: integer, the number of times the admin has signed in</p>
+<p><strong>current_sign_in_at</strong>: datetime, the time at which the admin signed in during the current session</p>
+<p><strong>last_sign_in_at</strong>: datetime, the time at which the admin signed in during the previous session</p>
+<p><strong>current_sign_in_ip</strong>: inet, the IP address of the admin during the current session</p>
+<p><strong>last_sign_in_ip</strong>: inet, the IP address of the admin during the previous session</p>
+<p><strong>authentication_token</strong>: string, a token used for authenticating the admin</p>
+<p><strong>created_at</strong>: datetime, the time at which the admin's record was created</p>
+<p><strong>updated_at</strong>: datetime, the time at which the admin's record was last updated</p>
+<p><strong>organisation_id</strong>: bigint, the ID of the organization to which the admin belongs</p>
+<p><strong>type</strong>: string, the type of staff member (in this case, "Admin")</p>
+<p><strong>employee_id</strong>: string, the employee ID of the admin</p>
+<p><strong>confirmation_token</strong>: string, a token used for confirming the admin's email address</p>
+<p><strong>confirmed_at</strong>: datetime, the time at which the admin's email address was confirmed</p>
+<p><strong>confirmation_sent_at</strong>: datetime, the time at which the confirmation token was sent</p>
+<p><strong>suspended_at</strong>: datetime, the time at which the admin's access was suspended</p>
+<p><strong>archived_at</strong>: datetime, the time at which the admin's record was archived</p>
+<p><strong>encrypted_pin</strong>: string, a hashed version of the admin's PIN (personal identification number)</p>
+<p><strong>unconfirmed_email</strong>: string, the unconfirmed email address of the admin (if the admin has requested a change to their email address)</p>
+<p>Inherits from <a href="./#staffmember">StaffMember</a> model</p>
+<p>Custom methods: None</p>
+<p>Examples of usage:</p>
+<pre><code>An instance of the Admin model could represent a staff member with administrative privileges within an organization.
+The email, password, and authentication token attributes could be used for authenticating the admin when logging in to the system.
+The sign_in_count, current_sign_in_at, and last_sign_in_at attributes could be used for tracking the admin's login history.
+</code></pre>
+<h1 id="answer"><strong>Answer</strong></h1>
+<p>Attributes:</p>
+<p><strong>id</strong>(integer): The primary key for the model.</p>
+<p><strong>question_id</strong>(integer): The ID of the question that the answer belongs to.</p>
+<p><strong>title</strong>(text): The title of the answer.</p>
+<p><strong>description</strong>(text): A description of the answer.</p>
+<p><strong>created_at</strong>(datetime): The timestamp for when the answer was created.</p>
+<p><strong>updated_at</strong>(datetime): The timestamp for when the answer was last updated.</p>
+<p><strong>position</strong>(integer): The position of the answer within its parent question.</p>
+<p>Relationships:</p>
+<p><strong>question</strong>(belongs_to): The question that the answer belongs to.</p>
+<p><strong>photo</strong>(has_one): The photo associated with the answer.</p>
+<p>Custom methods:</p>
+<p><strong>siblings</strong>: Returns the other answers within the same question as the current answer.</p>
+<p><strong>reject_photo?</strong>: Determines whether a photo should be rejected when creating or updating an answer.</p>
+<p><strong>set_position</strong>: Sets the position of the answer within its parent question.</p>
+<p>Examples of usage:</p>
+<pre><code># Create a new answer with a title and description
+answer = Answer.new(title: 'Yes', description: 'The answer is yes')
+
+# Set the question that the answer belongs to
+answer.question = Question.first
+
+# Save the answer
+answer.save
+
+# Update the title of the answer
+answer.title = 'Yes, definitely'
+answer.save
+
+# Delete the answer
+answer.destroy
+</code></pre>
+<h1 id="applicationrecord"><strong>ApplicationRecord</strong></h1>
+<p>Attributes:</p>
+<p>None. ApplicationRecord is an abstract base class and does not have any attributes of its own.</p>
+<p>Relationships:</p>
+<p>None. ApplicationRecord is an abstract base class and does not have any relationships of its own.
+Custom methods:</p>
+<p>updated_since(datetime): Returns all records that have been updated since the specified datetime.
+pluck_to_hash(*keys): Returns an array of hashes, where each hash represents a record in the database with keys corresponding to the specified attributes.</p>
+<p>Examples of usage:</p>
+<pre><code># Find all records in the database that have been updated since yesterday
+ApplicationRecord.updated_since(1.day.ago)
+
+# Retrieve the IDs and titles of all records in the database
+ApplicationRecord.pluck_to_hash(:id, :title)
+Note: ApplicationRecord is an abstract base class and cannot be instantiated directly. Instead, you will need to use a concrete subclass of ApplicationRecord (such as Answer, Question, etc.) to create and manipulate records in the database.
+</code></pre>
+<h1 id="articlecontentcategory"><strong>ArticleContentCategory</strong></h1>
+<p>Attributes:</p>
+<p><strong>id</strong>(integer): The primary key for the model.</p>
+<p><strong>article_id</strong>(integer): The ID of the article that the content category belongs to.</p>
+<p><strong>content_category_id</strong>(integer): The ID of the content category.</p>
+<p><strong>created_at</strong>(datetime): The timestamp for when the article content category was created.</p>
+<p><strong>updated_at</strong>(datetime): The timestamp for when the article content category was last updated.</p>
+<p>Relationships:</p>
+<p><strong>article</strong>(belongs_to): The article that the content category belongs to.</p>
+<p><strong>content_category</strong>(belongs_to): The content category.
+Custom methods:</p>
+<p>None.
+Examples of usage:</p>
+<pre><code># Create a new article content category
+article_content_category = ArticleContentCategory.new
+
+# Set the article and content category that the article content category belongs to
+article_content_category.article = Article.first
+article_content_category.content_category = ContentCategory.first
+
+# Save the article content category
+article_content_category.save
+
+# Delete the article content category
+article_content_category.destroy
+</code></pre>
+<h1 id="article"><strong>Article</strong></h1>
+<p>Attributes:</p>
+<p><strong>id</strong>(integer): The primary key for the model.</p>
+<p><strong>title</strong>(string): The title of the article.</p>
+<p><strong>content</strong>(text): The content of the article.</p>
+<p><strong>publish_at</strong>(datetime): The timestamp for when the article should be published.</p>
+<p><strong>created_at</strong>(datetime): The timestamp for when the article was created.</p>
+<p><strong>updated_at</strong>(datetime): The timestamp for when the article was last updated.</p>
+<p><strong>notification_job_id</strong>(integer): The ID of the job used to send notifications when the article is published.</p>
+<p>Relationships:</p>
+<p><strong>header_image</strong>(has_one): The header image for the article.</p>
+<p><strong>photos</strong>(has_many): The photos associated with the article.</p>
+<p><strong>article_content_categories</strong>(has_many): The article content categories associated with the article.</p>
+<p><strong>content_categories</strong>(has_many): The content categories associated with the article.</p>
+<p>Custom methods:</p>
+<p><strong>header_image=(header_image)</strong>: Sets the header image for the article.</p>
+<p><strong>publish_at=(publish_at)</strong>: Sets the publish timestamp for the article.</p>
+<p><strong>published?</strong>: Returns true if the article has been published, false otherwise.</p>
+<p><strong>status</strong>: Returns the current status of the article.</p>
+<p><strong>self.start_draft</strong>: Creates a new draft article.</p>
+<p>Examples of usage:</p>
+<pre><code># Create a new article
+article = Article.new
+
+# Set the title and content of the article
+article.title = 'My article'
+article.content = 'This is the content of my article'
+
+# Set the publish timestamp for the article
+article.publish_at = 1.day.from_now
+
+# Save the article
+article.save
+
+# Check if the article has been published
+article.published?
+
+# Get the status of the article
+article.status
+
+# Delete the article
+article.destroy
+</code></pre>
+<h1 id="authenticationtoken"><strong>AuthenticationToken</strong></h1>
+<p>The AuthenticationToken model represents a token that is used to authenticate a user. It belongs to a polymorphic user, which means that it can belong to any model that includes the User module.</p>
+<p>Attributes:</p>
+<p><strong>id</strong>: a unique identifier for the token (integer, primary key)</p>
+<p><strong>context</strong>: the context in which the token is used (string)</p>
+<p><strong>body</strong>: the actual token (string)</p>
+<p><strong>user_type</strong>: the type of the user that the token belongs to (string)</p>
+<p><strong>user_id</strong>: the ID of the user that the token belongs to (integer)</p>
+<p><strong>last_used_at</strong>: the last time the token was used (datetime)</p>
+<p><strong>ip_address</strong>: the IP address from which the token was last used (inet)</p>
+<p><strong>user_agent</strong>: the user agent string from the device that used the token last (string)</p>
+<p><strong>created_at</strong>: the time the token was created (datetime)</p>
+<p><strong>updated_at</strong>: the time the token was last updated (datetime)</p>
+<p>Relationships:</p>
+<p><strong>user</strong>: the user that the token belongs to (polymorphic association)</p>
+<p>Custom methods:</p>
+<p><strong>decode</strong>: decodes a token from the headers</p>
+<p><strong>find_for_context</strong>: finds a token for a given context and token body</p>
+<p><strong>create_and_return_staff_token</strong>: creates a new staff token and returns it</p>
+<p><strong>create_and_return_manager_token</strong>: creates a new manager token and returns it</p>
+<p><strong>create_and_return_token</strong>: creates a new token for a given context and returns it</p>
+<p><strong>create_and_return_analytics_token</strong>: creates and returns an analytics token</p>
+<p>Examples of usage:</p>
+<pre><code>To create a new staff token for a user:
+
+
+token = AuthenticationToken.create_and_return_staff_token(current_user, request)
+To find a token for a given context and token body:
+
+
+token = AuthenticationToken.find_for
+</code></pre>
+<h1 id="branchcategorisation"><strong>BranchCategorisation</strong></h1>
+<p>The BranchCategorisation model represents the many-to-many relationship between branches and partner categories. This allows a branch to be associated with one or more partner categories, and a partner category to be associated with one or more branches.</p>
+<p>Attributes:</p>
+<p><strong>id</strong>: A unique identifier for the branch categorisation record, stored as an integer and generated automatically by the database.</p>
+<p><strong>branch_id</strong>: The ID of the branch that is associated with a partner category, stored as an integer.</p>
+<p><strong>partner_category_id</strong>: The ID of the partner category that is associated with a branch, stored as an integer.</p>
+<p><strong>created_at</strong>: A timestamp indicating when the branch categorisation record was created, stored as a datetime.</p>
+<p><strong>updated_at</strong>: A timestamp indicating when the branch categorisation record was last updated, stored as a datetime.</p>
+<p>Relationships:</p>
+<p><strong>belongs_to</strong>: A branch categorisation belongs to a single branch and a single partner category.</p>
+<p><strong>branch</strong>: This relationship specifies the branch that is associated with a partner category.</p>
+<p><strong>partner_category</strong>: This relationship specifies the partner category that is associated with a branch.</p>
+<p>Custom methods:</p>
+<p>There are no custom methods defined for the BranchCategorisation model.</p>
+<p>Examples of usage:</p>
+<p>Creating a new branch categorisation:</p>
+<pre><code>branch = Branch.first
+partner_category = PartnerCategory.first
+branch_categorisation = BranchCategorisation.new(branch: branch, partner_category: partner_category)
+branch_categorisation.save
+</code></pre>
+<p>Retrieving all branch categorisations for a particular branch:</p>
+<pre><code>branch = Branch.first
+branch_categorisations = branch.branch_categorisations
+</code></pre>
+<p>Retrieving all branches that belong to a particular partner category:</p>
+<pre><code>partner_category = PartnerCategory.first
+branches = partner_category.branches
+</code></pre>
+<p>Removing a branch categorisation:</p>
+<pre><code>branch_categorisation = BranchCategorisation.first
+branch_categorisation.destroy
+</code></pre>
+<h1 id="branchmanager"><strong>BranchManager</strong></h1>
+<p>The BranchManager model is a subclass of the StaffMember model and represents a staff member who is a branch manager at an organisation.</p>
+<p>attributes:</p>
+<p><strong>id</strong>: a bigint that serves as the primary key for the model</p>
+<p><strong>email</strong>: a string that stores the email address of the staff member</p>
+<p><strong>first_name</strong>: a string that stores the first name of the staff member</p>
+<p><strong>last_name</strong>: a string that stores the last name of the staff member</p>
+<p><strong>mobile_number</strong>: a string that stores the mobile phone number of the staff member</p>
+<p><strong>encrypted_password</strong>: a string that stores the encrypted password of the staff member</p>
+<p><strong>reset_password_token</strong>: a string that stores a token used to reset the staff member's password</p>
+<p><strong>reset_password_sent_at</strong>: a datetime that stores the time at which the reset password token was sent to the staff member</p>
+<p><strong>remember_created_at</strong>: a datetime that stores the time at which the staff member requested to be remembered on the device they are using</p>
+<p><strong>sign_in_count</strong>: an integer that stores the number of times the staff member has signed in</p>
+<p><strong>current_sign_in_at</strong>: a datetime that stores the time at which the staff member last signed in</p>
+<p><strong>last_sign_in_at</strong>: a datetime that stores the time at which the staff member signed in before the last time they signed in</p>
+<p><strong>current_sign_in_ip</strong>: an inet data type that stores the IP address the staff member is currently signed in from</p>
+<p><strong>last_sign_in_ip</strong>: an inet data type that stores the IP address the staff member last signed in from</p>
+<p><strong>authentication_token</strong>: a string that stores a unique token used for authentication purposes</p>
+<p><strong>created_at</strong>: a datetime that stores the time at which the staff</p>
+<p>Relationships:</p>
+<p>BranchManager has a one-to-many relationship with Branch through the branches association.</p>
+<p>Custom methods:</p>
+<p>assigned_branches: returns a collection of branches that the branch manager is assigned to.</p>
+<p>Examples of usage:</p>
+<pre><code># Find a branch manager by their email and assign them to a branch
+manager = BranchManager.find_by(email: 'branch_manager@example.com')
+branch = Branch.find(1)
+manager.branches &lt;&lt; branch
+
+# Find all the branches that a branch manager is assigned to
+manager = BranchManager.find(1)
+manager.assigned_branches
+</code></pre>
+<h1 id="branch"><strong>Branch</strong></h1>
+<p>Attributes:</p>
+<p>**id: integer, primary key</p>
+<p>**business_unit_id: integer</p>
+<p>**name: string</p>
+<p>**created_at: datetime</p>
+<p>**updated_at: datetime</p>
+<p>**email: string</p>
+<p>**telephone: string</p>
+<p>**archived_at: datetime</p>
+<p>**image: string</p>
+<p>**branch_info: string</p>
+<p>**booking_url: string</p>
+<p>**vista_partner: boolean, default: false</p>
+<p>**ratings_count: integer, default: 0</p>
+<p>Relationships:</p>
+<p>business_unit: belongs to a BusinessUnit
+organisation: has one Organisation through the BusinessUnit
+photo: has one Photo as owner
+address: has one Address as addressable
+staff_assignments: has many StaffAssignments as target
+staff_members: has many StaffMembers through StaffAssignments
+shares: has many Shares
+users: has many Users through Shares with the condition that the Share is authorised
+branch_categorisations: has many BranchCategorisations
+categories: has many PartnerCategories through BranchCategorisations
+interactions: has many Interactions
+roles: has many Roles through the BusinessUnit
+check_ins: has many CheckIns
+member_requests: has many MemberRequests
+member_request_messages: has many MemberRequestMessages as messageable</p>
+<p>Custom methods:</p>
+<p>category_titles: returns an array of the titles of the categories associated with the branch
+destroy_staff: destroys the staff members associated with the branch</p>
+<h1 id="businessunit"><strong>BusinessUnit</strong></h1>
+<p>Attributes:</p>
+<p><strong>id</strong>: integer, primary key</p>
+<p><strong>name</strong>: string</p>
+<p><strong>organisation_id</strong>: integer, foreign key to the organisations table</p>
+<p><strong>created_at</strong>: datetime</p>
+<p><strong>updated_at</strong>: datetime</p>
+<p><strong>archived_at</strong>: datetime</p>
+<p>Relationships:</p>
+<p><strong>belongs_to</strong>:organisation</p>
+<p><strong>has_many</strong>:branches</p>
+<p><strong>has_many</strong>:roles</p>
+<p><strong>has_many</strong>:member_request_types</p>
+<p>Custom methods:</p>
+<p>None</p>
+<p>Examples of usage:</p>
+<p>Fetch all business units belonging to a particular organisation:</p>
+<pre><code>organisation = Organisation.find(1)
+business_units = organisation.business_units
+</code></pre>
+<p>Fetch all branches belonging to a particular business unit:</p>
+<pre><code>business_unit = BusinessUnit.find(1)
+branches = business_unit.branches
+</code></pre>
+<p>Fetch all roles belonging to a particular business unit:</p>
+<pre><code>business_unit = BusinessUnit.find(1)
+roles = business_unit.roles
+</code></pre>
+<p>Fetch all member request types belonging to a particular business unit:</p>
+<pre><code>business_unit = BusinessUnit.find(1)
+member_request_types = business_unit.member_request_types
+</code></pre>
+<h1 id="categoryupdate"><strong>CategoryUpdate</strong></h1>
+<p>Attributes:</p>
+<p><strong>id</strong>: integer</p>
+<p><strong>category_id</strong>: integer</p>
+<p><strong>question_ids</strong>: array of integers</p>
+<p><strong>created_at</strong>: datetime</p>
+<p><strong>updated_at</strong>: datetime</p>
+<p>Relationships:</p>
+<p><strong>belongs_to</strong>:category</p>
+<p><strong>Custom methods</strong>:</p>
+<p><strong>title</strong>: returns the title of the associated category</p>
+<p><strong>photo</strong>: returns the photo of the associated category</p>
+<p><strong>questions</strong>: returns an array of Question objects that have an id in the question_ids attribute</p>
+<p>Examples of usage:</p>
+<p>Find the category update with id 1</p>
+<pre><code>update = CategoryUpdate.find(1)
+</code></pre>
+<p>Access the title of the associated category</p>
+<pre><code>update.title
+</code></pre>
+<p>Access the photo of the associated category</p>
+<pre><code>update.photo
+</code></pre>
+<p>Access the questions associated with this update</p>
+<pre><code>update.questions
+</code></pre>
+<h1 id="category"><strong>Category</strong></h1>
+<h1 id="checkin"><strong>CheckIn</strong></h1>
+<h1 id="city"><strong>City</strong></h1>
+<h1 id="contentcategory"><strong>ContentCategory</strong></h1>
+<h1 id="dataimport"><strong>DataImport</strong></h1>
+<h1 id="device"><strong>Device</strong></h1>
+<h1 id="feed"><strong>Feed</strong></h1>
+<h1 id="ignore"><strong>Ignore</strong></h1>
+<h1 id="interaction"><strong>Interaction</strong></h1>
+<h1 id="memberrequestmessage"><strong>MemberRequestMessage</strong></h1>
+<h1 id="memberrequesttypeassignment"><strong>MemberRequestTypeAssignment</strong></h1>
+<h1 id="memberrequesttype"><strong>MemberRequestType</strong></h1>
+<h1 id="memberrequest"><strong>MemberRequest</strong></h1>
+<h1 id="notification"><strong>Notification</strong></h1>
+<h1 id="organisation"><strong>Organisation</strong></h1>
+<h1 id="partnercategory"><strong>PartnerCategory</strong></h1>
+<h1 id="personality"><strong>Personality</strong></h1>
+<h1 id="photo"><strong>Photo</strong></h1>
+<h1 id="preferencegroup"><strong>PreferenceGroup</strong></h1>
+<h1 id="profilerequest"><strong>ProfileRequest</strong></h1>
+<h1 id="question"><strong>Question</strong></h1>
+<h1 id="rating"><strong>Rating</strong></h1>
+<h1 id="release"><strong>Release</strong></h1>
+<h1 id="roleassignment"><strong>RoleAssignment</strong></h1>
+<h1 id="rolepreferencegroupassignment"><strong>RolePreferenceGroupAssignment</strong></h1>
+<h1 id="role"><strong>Role</strong></h1>
+<h1 id="share"><strong>Share</strong></h1>
+<h1 id="staffassignment"><strong>StaffAssignment</strong></h1>
+<h1 id="staffmember"><strong>StaffMember</strong></h1>
+<h1 id="topquestion"><strong>TopQuestion</strong></h1>
+<h1 id="useranswer"><strong>UserAnswer</strong></h1>
+<h1 id="user"><strong>User</strong></h1>
+<h1 id="videocontentcategory"><strong>VideoContentCategory</strong></h1>
+<h1 id="video"><strong>Video</strong></h1>
+<h1 id="vistaadmin"><strong>VistaAdmin</strong></h1>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../route/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Index" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Index
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="concern/" class="md-footer__link md-footer__link--next" aria-label="Next: concerns" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              concerns
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tracking", "navigation.sections", "toc.follow"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>
